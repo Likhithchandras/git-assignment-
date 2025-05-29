@@ -6,12 +6,42 @@
   <style>
 body {
       background-color: #fffbe6;
-      font-family: Verdana, sans-serif;
+     font-family: Verdana, sans-serif;
       margin: 0;
       padding: 0;
     }
   </style>
 </head>
 <body>
+	<table>
+    <thead>
+      <tr>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr onclick="rowClicked('101', 'The Alchemist')">
+        <td>101</td>
+        <td>The Alchemist</td>
+        <td>Paulo Coelho</td>
+        <td>Available</td>
+      </tr>
+      <tr onclick="rowClicked('102', '1984')">
+        <td>102</td>
+        <td>1984</td>
+        <td>George Orwell</td>
+        <td>Issued</td>
+      </tr>
+      <tr onclick="rowClicked('103', 'To Kill a Mockingbird')">
+        <td>103</td>
+        <td>To Kill a Mockingbird</td>
+        <td>Harper Lee</td>
+        <td>Available</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
