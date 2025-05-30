@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Home</title>
+  <style>
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+   header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+   }
+nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+.content {
+      padding: 20px;
+    }
+ </style>
+</head>
+<body onload="showDate()">
+<header>
+    <h1 style="margin: 0;">Welcome to the Library</h1>
+  </header>
+ <nav>
+    <a href="index.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="#">Contact</a>
+ </nav>
+
+	<div class="content">
+    <h2 style="color:#4CAF50;">Library Management System</h2>
+    <p>Manage books, members, and borrowing records easily.</p>
+    <p><strong>Today's Date:</strong>
+      <span id="date" style="color:blue;"></span>
+    </p>
+  </div>
+<script>
+    function showDate() {
+    const today = new Date();
+    document.getElementById("date").textContent = today.toDateString();
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
